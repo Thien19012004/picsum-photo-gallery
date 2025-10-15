@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0f172a; /* slate-900 */
+  color: #e2e8f0; /* slate-200 */
+}
+
+
+.loader {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 3px solid rgb(71 85 105);
+  border-top-color: rgb(148 163 184);
+  border-radius: 9999px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.card-dark {
+  background: rgba(30, 41, 59, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-dark:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px -5px rgba(148, 163, 184, 0.2);
+}
